@@ -1,4 +1,5 @@
 import java.util.*;
+//TAGS: binaryIndexTree
 
 public class median {
 
