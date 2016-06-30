@@ -1,4 +1,5 @@
 import java.util.*;
+//TAGS: segmentTree, greedy
 
 public class balloc {
 
