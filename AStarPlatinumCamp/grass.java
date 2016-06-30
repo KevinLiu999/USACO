@@ -1,5 +1,7 @@
 import java.util.*;
 import java.io.*;
+//TAGS: graphTheory, dfs
+//ALGORTIHMS: Tarjan's SCC Algorithm
 
 public class grass {
 
