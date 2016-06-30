@@ -1,4 +1,5 @@
 import java.util.*;
+//TAGS: dataStructures, bruteForce
 
 public class lines {
 
