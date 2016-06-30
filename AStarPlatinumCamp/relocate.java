@@ -1,5 +1,7 @@
 import java.util.*;
 import java.io.*;
+//TAGS: graphTheory, dfs
+//ALGORITHMS: Dijkstra's
 
 public class relocate {
 
