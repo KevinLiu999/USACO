@@ -1,5 +1,6 @@
 import java.util.*;
 import java.io.*;
+//TAGS: dynamicProgramming
 
 public class hayturn {
 
