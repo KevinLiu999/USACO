@@ -1,4 +1,5 @@
 import java.util.*;
+//TAGS: dynamicProgramming
 
 public class nochange {
 
