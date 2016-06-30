@@ -1,4 +1,5 @@
 import java.util.*;
+//TAGS: graphTheory, eulerianTours
 
 public class fence {
 
