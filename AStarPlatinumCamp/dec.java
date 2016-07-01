@@ -45,7 +45,7 @@ public class dec {
 	}
 
 	public static class State implements Comparable<State> {
-
+ 
 		public int k, p, a;
 
 		public State(int k, int p, int a) {
