@@ -1,2 +1,3 @@
 # USACO
-  AStarPlatinumCamp
+	[AStarPlatinumCamp](https://github.com/KevinLiu999/USACO/AStarPlatinumCamp)
+
