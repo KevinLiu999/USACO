@@ -1,5 +1,4 @@
 import java.util.*;
-//TAGS: sweepLine, geometry
 
 public class cowrect {
 
