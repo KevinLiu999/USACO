@@ -1,2 +1,2 @@
 # USACO
-:3
+  AStarPlatinumCamp
