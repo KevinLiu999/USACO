@@ -1,6 +1,5 @@
 import java.util.*;
 import java.io.*;
-//TAGS: geometry, convexHull
 
 public class curling {
 
