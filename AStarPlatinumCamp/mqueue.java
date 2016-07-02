@@ -1,5 +1,4 @@
 import java.util.*;
-//TAGS: greedy
 
 public class mqueue {
 
