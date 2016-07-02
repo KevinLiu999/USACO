@@ -1,7 +1,5 @@
 import java.util.*;
 import java.io.*;
-//TAGS: graphTheory, dfs
-//ALGORITHMS: Tarjan's Offline LCA Algorithm
 
 public class distance {
 
