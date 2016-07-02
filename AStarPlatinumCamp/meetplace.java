@@ -1,6 +1,4 @@
 import java.util.*;
-//TAGS: graphTheory, dfs
-//ALGORITHMS: Tarjan's Offline LCA Algorithm
 
 public class meetplace {
 
