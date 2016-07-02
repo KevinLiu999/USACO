@@ -1,5 +1,4 @@
 import java.util.*;
-//TAGS: dynamicProgramming, tsp
 
 public class island2 {
 
