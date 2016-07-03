@@ -1,6 +1,6 @@
 import java.util.*;
 import java.io.*;
-
+ 
 public class camelot {
 
 	public static void main(String[] args) throws IOException {
