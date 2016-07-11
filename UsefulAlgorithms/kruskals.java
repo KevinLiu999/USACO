@@ -1,6 +1,6 @@
 import java.util.*;
 import java.io.*;
-
+ 
 public class kruskals {
 
 	public static int[] parent;
