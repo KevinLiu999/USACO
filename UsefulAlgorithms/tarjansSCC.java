@@ -1,6 +1,6 @@
 import java.util.*;
 import java.io.*;
-
+ 
 public class tarjansSCC {
 
 	public static ArrayList<ArrayList<Integer>> adj, scc;
