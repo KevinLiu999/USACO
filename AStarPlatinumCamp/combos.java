@@ -7,7 +7,14 @@ public class combos {
 
 		/* Read in Input */
 		BufferedReader f = new BufferedReader(new InputStreamReader(System.in));
-		StringTokenizer st = new StringTokenizer(f.readLine());
+
+		// Check for Blank Input
+		StringTokenizer st;
+		try {
+			st = new StringTokenizer(f.readLine());
+		} catch (Exception e) {
+			return;
+		}
 
 		int n = Integer.parseInt(st.nextToken());
 		int k = Integer.parseInt(st.nextToken());
@@ -33,19 +40,10 @@ public class combos {
 				int li = s[i].length();
 				int lj = s[j].length();
 
-				if (li >= lj) {
-					for (int l = lj - 1; l >= 0; l--) {
-						if (si.substring(li - l, li).equals(sj.substring(0, l))) {
-							nxt[i][j] = lj - l;
-							break;
-						}
-					}
-				} else {
-					for (int l = li; l >= 0; l--) {
-						if (si.substring(li - l, li).equals(sj.substring(0, l))) {
-							nxt[i][j] = lj - l;
-							break;
-						}
+				for (int l = Math.max(1, lj - li); l <= lj; l++) {
+					if (li - lj + l >= 0 && si.substring(li - lj + l, li).equals(sj.substring(0, lj - l))) {
+						nxt[i][j] = l;
+						break;
 					}
 				}
 
@@ -54,7 +52,6 @@ public class combos {
 						for (int m = li - l + 1; m <= li; m++) {
 							p[i][m]++;
 						}
-						break;
 					}
 				}
 
@@ -64,13 +61,18 @@ public class combos {
 
 		/* DP to Solve */
 		int[][] dp = new int[k + 1][n];
+		for (int i = 0; i <= k; i++) {
+			for (int j = 0; j < n; j++) {
+				dp[i][j] = -1;
+			}
+		}
 		for (int i = 0; i < n; i++) {
 			dp[s[i].length()][i] = p[i][s[i].length()];
 		}
 
-		for (int i = 0; i < k; i++) {
+		for (int i = 0; i <= k; i++) {
 			for (int j = 0; j < n; j++) {
-				if (dp[i][j] != 0) {
+				if (dp[i][j] != -1) {
 					for (int l = 0; l < n; l++) {
 						if (i + nxt[j][l] <= k) {
 							dp[i + nxt[j][l]][l] = Math.max(dp[i + nxt[j][l]][l], dp[i][j] + p[l][nxt[j][l]]);
